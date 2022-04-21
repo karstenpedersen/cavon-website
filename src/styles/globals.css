@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colors */
+    --color-dark-900: #030303;
+    --color-dark-700: #3f3f46;
+    --color-dark-300: #d4d4d8;
+    --color-white: #ffffff;
+
+    /* Design colors */
+    --color-primary: #3273db;
+    --color-primary-variant: #2458ad;
+    --color-on-primary: var(--color-white);
+    --color-secondary: #3273db;
+    --color-secondary-variant: #3273db;
+    --color-on-secondary: var(--color-dark-900);
+
+    --color-background: var(--color-dark-900);
+    --color-on-background: var(--color-dark-900);
+    --color-dark: var(--color-dark-900);
+    --color-on-dark: var(--color-white);
+    --color-surface: var(--color-dark-300);
+    --color-on-surface: var(--color-dark-900);
+
+    --color-text-light: var(--color-dark-300);
+
+    --color-error: #ea7072;
+    --color-on-error: var(--color-white);
+
+    /* Heights */
+    --header-height: 90px;
+  }
+}
+
+/* Decoration */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+p {
+  @apply leading-6;
+}
+
+/* Custom */
+.hover-duration {
+  @apply duration-100;
+}
+
+.text-primary-hover {
+  @apply hover-duration transition-colors hover:text-primary;
+}
+
+.primary-hover {
+  @apply hover-duration rounded bg-primary py-2 px-4 font-semibold text-on-primary shadow transition-colors hover:bg-primary-variant;
+}
+
+.primary-b-hover {
+  @apply hover-duration rounded border-2 border-primary bg-on-primary py-2 px-4 text-primary shadow transition-colors hover:bg-primary hover:text-on-primary;
+}
+
+.light-hover {
+  @apply hover-duration bg-dark-300 text-dark-900 hover:bg-primary hover:text-dark-300;
+}
+
+.white-hover {
+  @apply hover-duration bg-on-dark text-dark-900 hover:bg-primary hover:text-on-primary;
+}
+
+.dark-hover {
+  @apply hover-duration bg-dark-900 text-on-dark transition-colors hover:bg-primary hover:text-on-primary;
+}
+
+/* Custom compoenents */
+.btn-primary {
+  @apply primary-hover rounded px-8 py-2;
+}
+
+.btn-primary-b {
+  @apply primary-b-hover rounded px-4 py-2;
+}
+
+.btn-dark {
+  @apply dark-hover rounded px-4 py-2;
+}
+
+/* Decorations */
+.before-slash {
+  @apply before:mr-2 before:font-bold before:text-primary before:content-['/'];
+}
+
+/* Titles */
+.title {
+  @apply mb-4 max-w-max border-b-[3px] border-primary pb-1 text-3xl font-bold text-dark-900;
+}
+.subtitle {
+  @apply text-lg font-bold text-dark-900;
+}
+
+.title-section {
+  @apply max-w-max text-5xl font-bold !text-white;
+}
+
+.title-1 {
+  @apply mb-4 max-w-max text-3xl font-bold !text-white;
+}
+
+.title-2 {
+  @apply mb-4 max-w-max text-2xl font-bold !text-dark-900;
+}
+
+.title-3 {
+  @apply mb-4 max-w-max text-xl font-bold !text-dark-900;
+}
+.title-4 {
+  @apply mb-4 max-w-max text-lg font-bold !text-dark-900;
+}
+
+.title-page {
+  @apply text-4xl font-bold uppercase text-white md:text-5xl;
+}
+
+.online-title-page {
+  @apply text-2xl font-semibold text-dark-900;
+}
+
+.title-bold {
+  @apply font-bold text-dark-900;
+}
+
+.title-footer {
+  @apply before-slash mb-1 font-bold text-dark-300;
+}
+
+.link {
+  @apply hover-duration hover:text-primary hover:underline;
+}
+
+.highlight {
+  @apply text-primary;
+}
+
+.action-text {
+  @apply transition-colors duration-100 hover:text-primary;
+}
+
+.action-bg {
+  @apply transition-colors duration-100 hover:bg-primary;
+}
+
+/* Images */
+.image-container {
+  @apply relative;
+}
+
+.image {
+  @apply object-cover;
+}
+
+/* Forms */
+.form-input {
+  @apply rounded p-2 shadow;
+}
+
+.error-text {
+  @apply text-sm text-error;
+}
+
+.error-border {
+  @apply ring-2 ring-error;
+}
+
+/* Grids */
+.card-grid {
+  @apply grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.card {
+  @apply rounded text-white shadow-md;
+}
+
+/* Modals */
+.modal {
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+  z-index: 50;
+}
+
+/* Online */
+.layout-row {
+  grid-template-rows: 60px calc(100vh - 60px);
+}
+
+/* Navigation */
+.nav-item {
+  @apply cursor-pointer text-lg font-semibold transition-colors group-hover:text-primary;
+}
+
+.header-gradient {
+}
