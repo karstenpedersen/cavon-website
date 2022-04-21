@@ -1,5 +1,5 @@
 const GameImage = () => {
-  return ();
-}
+  return <div>Test</div>;
+};
 
 export default GameImage;
