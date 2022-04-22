@@ -11,7 +11,7 @@ const Section: FunctionComponent<Props> = (props) => {
   const { children, sectionId = "", className = "", padding = true } = props;
 
   return (
-    <section id={sectionId} className={`${padding && "py-10"} ${className}`}>
+    <section id={sectionId} className={`${padding && "py-20"} ${className}`}>
       {children}
     </section>
   );

@@ -29,20 +29,26 @@ const Navigation: FunctionComponent<Props> = (props) => {
           className={itemClassName}
         />
         <NavItem
-          title="Gameplay"
-          path="#gameplay"
+          title="About"
+          path="#about"
           closeMenu={closeMenu}
           className={itemClassName}
         />
         <NavItem
-          title="About Us"
-          path="#about-us"
+          title="Features"
+          path="#features"
           closeMenu={closeMenu}
           className={itemClassName}
         />
         <NavItem
-          title="Contact"
-          path="#contact"
+          title="Media"
+          path="#media"
+          closeMenu={closeMenu}
+          className={itemClassName}
+        />
+        <NavItem
+          title="Sign Up"
+          path="#sign-up"
           closeMenu={closeMenu}
           className={itemClassName}
         />

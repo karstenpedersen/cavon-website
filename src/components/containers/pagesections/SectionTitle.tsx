@@ -18,8 +18,8 @@ const SectionTitle = ({
 }: Props) => {
   return (
     <div className="mb-6 space-y-2 ">
-      <div className={`flex items-center justify-between ${className}`}>
-        <h2 className="title-1">{title}</h2>
+      <div className={`flex items-center justify-between  ${className}`}>
+        <h1 className="title-1 bg-blue-300">{title}</h1>
         {children}
       </div>
       {description && <p className="mb-2 text-zinc-500">{description}</p>}

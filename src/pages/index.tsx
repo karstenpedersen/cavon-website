@@ -1,7 +1,8 @@
 import Page from "components/containers/pagelayouts/Page";
-import AboutUsSection from "components/sections/AboutUsSection";
-import GameplaySection from "components/sections/GameplaySection";
+import AboutSection from "components/sections/AboutSection";
+import FeatureSection from "components/sections/FeatureSection";
 import HeroSection from "components/sections/HeroSection";
+import MediaSection from "components/sections/MediaSection";
 import ScreenshotSection from "components/sections/ScreenshotSection";
 import SignUpSection from "components/sections/SignUpSection";
 import type { NextPage } from "next";
@@ -12,14 +13,17 @@ const Home: NextPage = () => {
       {/* Hero section */}
       <HeroSection />
 
-      {/* Gameplay section */}
-      <GameplaySection />
+      {/* About Us section */}
+      <AboutSection />
 
       {/* Screenshot section */}
       <ScreenshotSection />
 
-      {/* About Us section */}
-      <AboutUsSection />
+      {/* Feature section */}
+      <FeatureSection />
+
+      {/* Media section */}
+      <MediaSection />
 
       {/* Sign Up section */}
       <SignUpSection />

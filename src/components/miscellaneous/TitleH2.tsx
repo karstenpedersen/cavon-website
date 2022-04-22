@@ -17,7 +17,7 @@ const SectionTitle = ({
   divider,
 }: Props) => {
   return (
-    <div className="mb-6 space-y-2 ">
+    <div className="mb-6 space-y-2">
       <div className={`flex items-center justify-between ${className}`}>
         <h1 className="title-section">{title}</h1>
         {children}

@@ -7,6 +7,7 @@ interface Props {
   children?: ReactNode;
   className?: string;
   height?: string;
+  sectionId?: string;
 }
 
 const ImageSection: ComponentType<Props> = ({
@@ -14,9 +15,10 @@ const ImageSection: ComponentType<Props> = ({
   children,
   className,
   height = "",
+  sectionId,
 }) => {
   return (
-    <Section padding={false}>
+    <Section padding={false} sectionId={sectionId}>
       <div className={`relative w-full ${height}`}>
         <Image src={image} alt="hero image" className="image" layout="fill" />
         <div className={`absolute h-full w-full ${className}`}>{children}</div>

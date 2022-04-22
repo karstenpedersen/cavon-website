@@ -11,8 +11,8 @@
     --color-white: #ffffff;
 
     /* Design colors */
-    --color-primary: #3273db;
-    --color-primary-variant: #2458ad;
+    --color-primary: #6100ff;
+    --color-primary-variant: #4d00cc;
     --color-on-primary: var(--color-white);
     --color-secondary: #3273db;
     --color-secondary-variant: #3273db;
@@ -22,8 +22,8 @@
     --color-on-background: var(--color-dark-900);
     --color-dark: var(--color-dark-900);
     --color-on-dark: var(--color-white);
-    --color-surface: var(--color-dark-300);
-    --color-on-surface: var(--color-dark-900);
+    --color-surface: var(--color-primary);
+    --color-on-surface: var(--color-white);
 
     --color-text-light: var(--color-dark-300);
 
@@ -105,22 +105,22 @@ p {
 }
 
 .title-section {
-  @apply max-w-max text-5xl font-bold !text-white;
+  @apply text-5xl font-bold;
 }
 
 .title-1 {
-  @apply mb-4 max-w-max text-3xl font-bold !text-white;
+  @apply mb-6 uppercase text-5xl font-bold;
 }
 
 .title-2 {
-  @apply mb-4 max-w-max text-2xl font-bold !text-dark-900;
+  @apply mb-4 uppercase text-3xl font-bold;
 }
 
 .title-3 {
-  @apply mb-4 max-w-max text-xl font-bold !text-dark-900;
+  @apply mb-4 text-xl font-bold;
 }
 .title-4 {
-  @apply mb-4 max-w-max text-lg font-bold !text-dark-900;
+  @apply mb-4 text-lg font-bold !text-dark-900;
 }
 
 .title-page {

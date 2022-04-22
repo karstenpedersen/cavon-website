@@ -7,7 +7,11 @@ import image1 from "../../../public/images/hero.png";
 
 const ScreenshotSection = () => {
   return (
-    <Section sectionId="about-us" className="bg-surface text-on-surface">
+    <Section
+      sectionId="screenshots"
+      className="bg-surface py-10 text-on-surface"
+      padding={false}
+    >
       <Wrapper>
         <ImageCarousel>
           <SwiperSlide>

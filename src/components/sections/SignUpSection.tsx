@@ -7,6 +7,7 @@ const SignUpSection = () => {
       image={heroImage}
       className="bg-black bg-opacity-30"
       height="h-[500px]"
+      sectionId="sign-up"
     >
       <div className="absolute top-[50%] w-full translate-y-[-50%]">
         <Wrapper className="h-full space-y-20 text-center text-white">
