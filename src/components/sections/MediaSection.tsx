@@ -8,14 +8,13 @@ const MediaSection = () => {
         <h1 className="title-1">CAVON MEDIA</h1>
         <div className="">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/j2mjr2lNcAk"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+            className="aspect-video w-full shadow-md md:mb-14"
+          />
         </div>
       </Wrapper>
     </Section>
