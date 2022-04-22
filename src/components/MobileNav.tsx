@@ -21,7 +21,7 @@ const MobileNav: FunctionComponent<Props> = ({ mobile, handleMobile }) => {
           />
 
           <motion.div
-            className={`fixed top-0 right-0 z-50 flex h-full w-full flex-col gap-2 bg-white shadow-lg sm:w-4/5`}
+            className={`fixed top-0 right-0 z-50 flex h-full w-full flex-col gap-2 bg-black shadow-lg sm:w-4/5`}
             initial={{ x: "100vw" }}
             animate={{ x: 0 }}
             exit={{ x: "100vw" }}
@@ -29,7 +29,7 @@ const MobileNav: FunctionComponent<Props> = ({ mobile, handleMobile }) => {
           >
             <div className="flex h-[90px] w-full flex-row-reverse items-center">
               <FaIcons.FaTimes
-                className="text-dark action-text mr-[1.25rem] text-4xl"
+                className="action-text mr-[1.25rem] text-4xl text-white"
                 role="button"
                 onClick={() => {
                   handleMobile();
@@ -38,10 +38,10 @@ const MobileNav: FunctionComponent<Props> = ({ mobile, handleMobile }) => {
             </div>
 
             <Navigation
-              className="flex h-full flex-col gap-8 px-[1.25rem] text-right"
-              listClassName="flex flex-col font-bold gap-8"
-              itemClassName="!text-2xl"
-              buttonClassName="!text-xl max-w-[200px] ml-auto"
+              className="flex h-full flex-col gap-8 px-[1.25rem] text-center text-white"
+              listClassName="flex flex-col font-bold gap-8 mb-10"
+              itemClassName="!text-2xl mx-auto"
+              buttonClassName="!text-xl max-w-[400px] mx-auto"
               closeMenu={() => {
                 handleMobile();
               }}

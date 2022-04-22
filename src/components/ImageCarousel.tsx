@@ -27,7 +27,7 @@ const ImageCarousel: FunctionComponent<Props> = ({ children }) => {
   return (
     <Swiper
       modules={[Keyboard, Pagination]}
-      spaceBetween={15}
+      spaceBetween={30}
       slidesPerView={slideCount}
       loop={true}
       grabCursor={true}

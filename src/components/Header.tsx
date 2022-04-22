@@ -22,13 +22,13 @@ const Header = () => {
   useScroll((callbackData: any) => {
     const { scroll, lastScroll } = callbackData;
 
-    if (scroll > 90) {
+    if (scroll > 300) {
       setBackgroundColor("bg-white text-dark-900 shadow-md");
     } else {
       setBackgroundColor("bg-transparent text-white");
     }
 
-    //setHidden(lastScroll < scroll && window.scrollY > 90);
+    setHidden(lastScroll < scroll && window.scrollY > 90);
   });
 
   return (

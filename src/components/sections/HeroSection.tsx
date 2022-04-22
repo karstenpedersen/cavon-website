@@ -8,10 +8,10 @@ const HeroSection = () => {
   return (
     <ImageSection
       image={heroImage}
-      className="bg-black bg-opacity-30"
+      className="bg-black bg-opacity-50"
       height="h-screen"
     >
-      <div className="absolute top-[15%] w-full" id="home">
+      <div className="absolute top-[20%] w-full" id="home">
         <Wrapper className="flex h-full w-full flex-col items-center gap-2 text-center text-white md:left-0 md:items-start md:text-left">
           <div className="mb-28 flex w-full flex-col items-center gap-2 md:items-start">
             <motion.h1
@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
 
           <motion.a
-            href="#buy"
+            href="#buy-cavon"
             className="btn-primary !px-6 !py-3 font-semibold"
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -46,17 +46,15 @@ const HeroSection = () => {
         </Wrapper>
       </div>
 
-      <motion.button
+      <motion.a
+        href="#gameplay"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        onClick={() => {
-          window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-        }}
         className="absolute left-[50%] bottom-3 m-auto flex translate-x-[-50%] flex-col items-center text-white hover:text-primary"
       >
         <IoIcons.IoIosArrowDown className="animate-bounce text-6xl" />
-      </motion.button>
+      </motion.a>
     </ImageSection>
   );
 };

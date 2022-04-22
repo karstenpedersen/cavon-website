@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { FunctionComponent } from "react";
 import Wrapper from "./containers/layouts/Wrapper";
 import Logo from "./Logo";
 import MoveToTop from "./MoveToTop";
@@ -17,13 +15,13 @@ const Footer = () => {
       </div>
 
       <Wrapper className="pb-6 pt-8">
-        <div className="flex items-center justify-between py-6">
+        <div className="flex flex-col-reverse items-center justify-between gap-10 py-6 sm:flex-row">
           <Navigation
             listClassName="flex gap-3"
             itemClassName="!font-normal"
             buttonClassName="hidden"
           />
-          <Socials className="flex gap-3" itemClassName="text-2xl" />
+          <Socials className="flex gap-3" itemClassName="text-3xl" />
         </div>
       </Wrapper>
 
@@ -37,21 +35,6 @@ const Footer = () => {
         </p>
       </Wrapper>
     </footer>
-  );
-};
-
-interface ItemProps {
-  title: string;
-  path: string;
-}
-
-const LinkItem: FunctionComponent<ItemProps> = ({ title, path }) => {
-  return (
-    <li>
-      <Link href={path}>
-        <a className="link">{title}</a>
-      </Link>
-    </li>
   );
 };
 

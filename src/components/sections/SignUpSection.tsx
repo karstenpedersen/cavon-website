@@ -24,9 +24,9 @@ const SignUpSection = () => {
             <div className="mx-auto flex max-w-sm">
               <input
                 type="text"
-                className="flex-grow rounded-l-lg border-r-2 border-black p-2 text-black"
+                className="flex-grow rounded-l-lg border-r-2 border-primary p-2 text-black"
               />
-              <button className="rounded-r-lg bg-white px-4 py-2 text-black">
+              <button className="min-w-max rounded-r-lg bg-white px-4 py-2 text-black">
                 Sign Up
               </button>
             </div>
