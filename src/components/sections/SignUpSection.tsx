@@ -16,9 +16,10 @@ const SignUpSection = () => {
               Sign Up for Updates
             </h1>
             <p className="mx-auto max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              numquam asperiores accusamus recusandae facilis. Accusamus
-              necessitatibus odio explicabo odit culpa?
+              Sign up now to get all the latest news about the game and features
+              that will be implemented. With your feedback, we can continue to
+              enhance the experience for the future of the game and its player
+              base.
             </p>
           </div>
           <form action="">
