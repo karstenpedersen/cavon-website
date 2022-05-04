@@ -3,7 +3,7 @@ import Section from "components/containers/pagesections/Section";
 
 const AboutSection = () => {
   return (
-    <Section sectionId="about-cavon">
+    <Section sectionId="about">
       <Wrapper className="text-center text-white">
         <h1 className="title-1">About Cavon</h1>
         <p className="mx-auto max-w-lg">
