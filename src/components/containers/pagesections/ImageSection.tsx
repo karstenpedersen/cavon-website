@@ -20,7 +20,7 @@ const ImageSection: ComponentType<Props> = ({
   return (
     <Section padding={false} sectionId={sectionId}>
       <div className={`relative w-full ${height}`}>
-        <Image src={image} alt="hero image" className="image" layout="fill" />
+        <Image src={image} alt="Image" className="image" layout="fill" />
         <div className={`absolute h-full w-full ${className}`}>{children}</div>
       </div>
     </Section>
