@@ -5,7 +5,7 @@ const SignUpSection = () => {
   return (
     <ImageSection
       image={heroImage}
-      className="bg-black bg-opacity-30"
+      className="bg-black bg-opacity-70"
       height="h-[500px]"
       sectionId="sign-up"
     >

@@ -5,7 +5,6 @@ import Wrapper from "./containers/layouts/Wrapper";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import Navigation from "./Navigation";
-import SkipNavigationPopUp from "./SkipNavigationPopUp";
 
 const Header = () => {
   const [hidden, setHidden] = useState(false);
@@ -38,9 +37,6 @@ const Header = () => {
           hidden && "top-[calc(-1*var(--header-height))]"
         } ${backgroundColor}`}
       >
-        {/* Skip navigation */}
-        <SkipNavigationPopUp />
-
         {/* Header */}
         <Wrapper className="flex h-full !max-w-full items-center justify-between gap-8 whitespace-nowrap text-inherit">
           <Logo />

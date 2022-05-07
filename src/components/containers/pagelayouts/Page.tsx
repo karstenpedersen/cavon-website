@@ -10,11 +10,7 @@ interface Props {
 }
 
 const Page: FunctionComponent<Props> = (props) => {
-  const {
-    children,
-    title = "Engdal Elevator",
-    description = "Engdal Elevator",
-  } = props;
+  const { children, title = "Cavon", description = "Cavon" } = props;
 
   return (
     <>
