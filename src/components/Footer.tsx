@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-dark-900 text-white">
       <div className="pt-6">
         <Wrapper className="flex items-center justify-between">
-          <Logo color="white" />
+          <Logo />
           <MoveToTop />
         </Wrapper>
       </div>

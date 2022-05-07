@@ -35,8 +35,14 @@
   }
 }
 
+@font-face {
+  font-family: "TextFont";
+  src: url("../fonts/Igiari.ttf");
+}
+
 /* Decoration */
 html {
+  font-family: "TextFont";
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -109,11 +115,11 @@ p {
 }
 
 .title-1 {
-  @apply mb-6 uppercase text-5xl font-bold;
+  @apply mb-6 text-5xl font-bold uppercase;
 }
 
 .title-2 {
-  @apply mb-4 uppercase text-3xl font-bold;
+  @apply mb-4 text-3xl font-bold uppercase;
 }
 
 .title-3 {
