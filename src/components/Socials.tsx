@@ -10,22 +10,38 @@ const Socials: FunctionComponent<Props> = ({ className, itemClassName }) => {
   return (
     <ul className={className}>
       <li>
-        <a href="#" className={"action-text " + itemClassName}>
+        <a
+          href="#"
+          aria-label="Facebook"
+          className={"action-text " + itemClassName}
+        >
           <FaIcons.FaFacebookF />
         </a>
       </li>
       <li>
-        <a href="#" className={"action-text " + itemClassName}>
+        <a
+          href="#"
+          aria-label="Twitter"
+          className={"action-text " + itemClassName}
+        >
           <FaIcons.FaTwitter />
         </a>
       </li>
       <li>
-        <a href="#" className={"action-text " + itemClassName}>
+        <a
+          href="#"
+          aria-label="Youtube"
+          className={"action-text " + itemClassName}
+        >
           <FaIcons.FaYoutube />
         </a>
       </li>
       <li>
-        <a href="#" className={"action-text " + itemClassName}>
+        <a
+          href="#"
+          aria-label="Instagram"
+          className={"action-text " + itemClassName}
+        >
           <FaIcons.FaInstagram />
         </a>
       </li>

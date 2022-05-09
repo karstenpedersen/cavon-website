@@ -28,7 +28,7 @@ const Footer = () => {
       <Wrapper className="pt-3 pb-6 text-center text-sm text-dark-700">
         <p className="text-inherit">
           Copyright © 2022 |{" "}
-          <a href="#home" className="link">
+          <a href="#home" aria-label="Go to top of the page" className="link">
             Cavon
           </a>{" "}
           | Teknikervej 2

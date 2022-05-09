@@ -24,11 +24,16 @@ const SignUpSection = () => {
           </div>
           <form action="">
             <div className="mx-auto flex max-w-sm">
+              <label htmlFor="email"></label>
               <input
+                id="email"
                 type="text"
                 className="flex-grow rounded-l-lg border-r-2 border-primary p-2 text-black"
               />
-              <button className="min-w-max rounded-r-lg bg-white px-4 py-2 text-black">
+              <button
+                aria-label="Sign up for news and updates"
+                className="min-w-max rounded-r-lg bg-white px-4 py-2 text-black"
+              >
                 Sign Up
               </button>
             </div>

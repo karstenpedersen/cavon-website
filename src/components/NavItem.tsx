@@ -15,6 +15,7 @@ const NavItem: FunctionComponent<NavItemProps> = (props) => {
   return (
     <li className="group">
       <a
+        aria-label={title}
         href={path}
         onClick={() => {
           if (closeMenu) {

@@ -1,5 +1,5 @@
-import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
+import { FunctionComponent } from "react";
 
 interface Props {
   onClick: Function;
@@ -10,6 +10,7 @@ const Backdrop: FunctionComponent<Props> = ({ onClick }) => {
     <motion.div
       className={`fixed top-0 left-0 z-50 h-full w-full bg-black`}
       role="button"
+      aria-label="Close menu"
       onClick={() => {
         onClick();
       }}

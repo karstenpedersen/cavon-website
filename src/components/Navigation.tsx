@@ -55,6 +55,7 @@ const Navigation: FunctionComponent<Props> = (props) => {
       </ul>
       <a
         href="#buy-cavon"
+        aria-label="Buy cavon"
         className={`btn-primary cursor-pointer px-12 ${buttonClassName}`}
         onClick={() => {
           closeMenu();
