@@ -4,6 +4,8 @@ A website made for my exam project in 'Digital Design og Udvikling' (DDU) at Gym
 
 The website is made with Next.js, TailwindCSS and TypeScript.
 
+Hosted on Vercel.com.
+
 ## Development
 
 ```bash
